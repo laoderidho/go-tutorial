@@ -1,7 +1,12 @@
 package main
 
-import "github.com/go-tutorial"
+import (
+	"basic_go/lib"
+	"fmt"
+)
 
 func main() {
 	lib.Sayhello()
+	data := "Ridho"
+	fmt.Println(lib.Mydata(data))
 }

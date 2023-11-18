@@ -10,7 +10,10 @@ func main() {
 	value:= 2
 	fmt.Println(getSliceArray(variable, value))
 
+	stringVar:= []string{"ridho, Fahreza"}
+	valueString:= "la Ode"
 
+	fmt.Println(getAppend(stringVar, valueString))
 }
 
 func sliceArray(val []string){
@@ -29,3 +32,9 @@ func getSliceArray(variable []int, value int) []int {
 	return variable
 }
 
+// append array 
+func getAppend(data[]string, value string) []string{
+	myData:= append(data, value)
+
+	return myData
+}

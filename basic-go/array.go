@@ -7,6 +7,10 @@ func main(){
 	
 	mahasiswaData()
 	lenArr()
+
+	// array no limit 
+	arrayNoLimit := [...]int{1,3,4,5,1,3}
+	fmt.Print(arrayNoLimit)
 }
 
 func getArray()[3]string{
@@ -25,6 +29,8 @@ func lenArr(){
 		}
 	}
 }
+
+
 
 // array of object 
 

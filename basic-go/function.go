@@ -14,6 +14,8 @@ func main(){
 
 	name:="Ridho"
 	fmt.Println(invoked(name))
+
+	fmt.Println(factorial(5))
 }
 
 // parameter harus mempunyai tipe data 
@@ -47,4 +49,13 @@ func invoked(testing string)string{
 }
 
 // recursive function
+// dari fungsi ini akan berjalan terus karena memanggil fungsinya sendiri 
+// ini membuat fungsi ini harus dihentikan jika kondisi terpenuhi
+func factorial(params int) int{
 
+	if params == 0{
+		return 1
+	}else{
+		return params * factorial(params -1)
+	}
+}
